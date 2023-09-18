@@ -1,7 +1,7 @@
 G = gcc
 WWW = -Wall -Wextra -Werror
 
-all: clean s21_cat style leaks
+all: clean s21_cat
 
 s21_cat: s21_cat.c s21_cat.h
 		$(G) $(WWW) s21_cat.c -o s21_cat

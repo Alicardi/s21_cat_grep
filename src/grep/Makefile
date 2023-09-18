@@ -1,7 +1,7 @@
 G = gcc
 WWW = -Wall -Wextra -Werror
 
-all: clean s21_grep style leaks
+all: clean s21_grep
 
 s21_grep: s21_grep.c s21_grep.h
 		$(G) $(WWW) s21_grep.c -o s21_grep
