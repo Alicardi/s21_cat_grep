@@ -11,8 +11,7 @@ clean:
 		rm -rf .clang-format
 
 style: 
-		cp ~/C3_SimpleBashUtils-1/materials/linters/.clang-format ~/C3_SimpleBashUtils-1/src/cat
-		clang-format -n s21_cat.c s21_cat.h
+		clang-format -style=Google -n *.c *.h
 
 leaks:
 		leaks -atExit -- ./s21_cat -benst test_test.txt

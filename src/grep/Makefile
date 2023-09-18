@@ -11,8 +11,7 @@ clean:
 		rm -rf .clang-format
 
 style: 
-		cp ~/C3_SimpleBashUtils-1/materials/linters/.clang-format ~/C3_SimpleBashUtils-1/src/grep
-		clang-format -n s21_grep.c s21_grep.h
+		clang-format -style=Google -n *.c *.h
 
 leaks: leaks_e leaks_i leaks_v leaks_c leaks_l leaks_n leaks_h leaks_s leaks_f leaks_o
 
